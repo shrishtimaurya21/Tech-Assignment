@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+    int reversedNumber = 0;
+    while (num != 0)
+    {
+        int digit = num % 10;
+        reversedNumber = reversedNumber * 10 + digit;
+        num /= 10;
+    }
+    cout << "Reversed number: " << reversedNumber << endl;
+    return 0;
+}
