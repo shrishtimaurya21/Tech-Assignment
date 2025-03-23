@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int start, end, sum = 0;
+    cout << "Enter the starting number: ";
+    cout << "Enter the ending number: ";
+    cin >> start;
+    cin >> end;
+
+    if (start > end)
+    {
+        cout << "The starting number should be equal to the ending number or less than the ending number";
+        return 1;
+    }
+    for (int i = start; i <= end; i++)
+    {
+        sum += i;
+    }
+    cout << "The sum of numbers from " << start << "to" << end << "is: " << sum << endl;
+    return 0;
+}
